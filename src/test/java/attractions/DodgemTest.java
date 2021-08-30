@@ -37,4 +37,10 @@ public class DodgemTest {
     public void ticketsAreHalfPriceForUnder12(){
         assertEquals(2.25, dodgems.priceFor(visitor), 0);
     }
+
+    @Test
+    public void incrementVisitCountMethodWorking(){
+        dodgems.incrementAttractionVisitCount();
+        assertEquals(1, dodgems.getVisitCount());
+    }
 }

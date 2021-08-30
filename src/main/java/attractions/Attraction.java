@@ -1,8 +1,9 @@
 package attractions;
 
 import behaviours.IReviewed;
+import behaviours.IVisited;
 
-public abstract class Attraction implements IReviewed {
+public abstract class Attraction implements IReviewed, IVisited {
     private String name;
     private int rating;
     private int visitCount;
@@ -23,5 +24,9 @@ public abstract class Attraction implements IReviewed {
 
     public int getVisitCount() {
         return visitCount;
+    }
+
+    public void incrementAttractionVisitCount(){
+        this.visitCount += 1;
     }
 }
