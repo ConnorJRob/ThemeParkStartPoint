@@ -1,4 +1,5 @@
 import behaviours.IReviewed;
+import behaviours.ISecurity;
 import behaviours.IVisited;
 import people.Visitor;
 
@@ -9,6 +10,7 @@ public class ThemePark {
 
     private ArrayList<IReviewed> allAttractions;
     private HashMap<String, Integer> reviews;
+    private ArrayList<IReviewed> allowed;
 
     public ThemePark() {
         this.allAttractions = new ArrayList<IReviewed>();
